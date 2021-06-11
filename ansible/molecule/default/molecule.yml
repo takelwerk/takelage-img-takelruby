@@ -12,7 +12,6 @@ platforms:
     # yamllint disable-line rule:line-length
     image: ${TAKELAGE_PROJECT_BASE_IMG:-nobaseimage}
     command: ${TAKELAGE_PROJECT_COMMAND:-/usr/bin/tail -f /dev/null}
-    privileged: true
     pre_build_image: true
     groups:
       - ${TAKELAGE_PROJECT_ENV:-prod}
