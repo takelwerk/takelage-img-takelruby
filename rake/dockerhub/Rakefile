@@ -94,7 +94,7 @@ namespace :dockerhub do |env|
               end
             end
 
-            desc 'Tag image for hub.docker.com'
+            desc 'Tag image with latest tag for hub.docker.com'
             task tag: [:"dockerhub:#{image}:#{pipeline}:tag:version",
                        :"dockerhub:#{image}:#{pipeline}:tag:latest"]
             namespace :tag do
@@ -109,7 +109,7 @@ namespace :dockerhub do |env|
                 )
               end
 
-              desc 'Tag version image for hub.docker.com'
+              desc 'Tag image with version tag for hub.docker.com'
               task :version do
                 @commands << format(
                   cmd_dockerhub_tag_version,
@@ -123,8 +123,8 @@ namespace :dockerhub do |env|
 
               if @project['images'][image].key?('target_tag')
                 target_tag = @project['images'][image]['target_tag']
-                desc 'Tag version image for hub.docker.com'
-                task :version do
+                desc 'Tag image with custom tag for hub.docker.com'
+                task :custom do
                   @commands << format(
                     cmd_dockerhub_tag_custom,
                     local_user: @project['local_user'],
