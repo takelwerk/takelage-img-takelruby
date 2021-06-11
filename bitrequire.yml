@@ -3,6 +3,7 @@ scopes:
   takelage.ansible:
   - name: ansible/molecule/default
   - name: ansible/molecule/image
+  - name: ansible/roles/takel-rvm
   - name: ansible/roles/takel-cleanup
   takelage.packer:
   - name: packer/templates/takelage/docker
