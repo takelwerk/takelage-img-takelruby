@@ -236,5 +236,23 @@
         "origin": "IMPORTED",
         "originallySharedDir": "packer/templates/takelage/docker"
     },
+    "takelage.rake/rake/ansible@0.0.3": {
+        "files": [
+            {
+                "name": "README.bit",
+                "relativePath": "README.bit",
+                "test": false
+            },
+            {
+                "name": "Rakefile",
+                "relativePath": "Rakefile",
+                "test": false
+            }
+        ],
+        "mainFile": "README.bit",
+        "rootDir": "rake/ansible",
+        "origin": "IMPORTED",
+        "originallySharedDir": "rake/ansible"
+    },
     "version": "14.8.8"
 }
