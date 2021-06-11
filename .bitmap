@@ -254,6 +254,24 @@
         "origin": "IMPORTED",
         "originallySharedDir": "rake/ansible"
     },
+    "takelage.rake/rake/dockerhub@0.0.3": {
+        "files": [
+            {
+                "name": "README.bit",
+                "relativePath": "README.bit",
+                "test": false
+            },
+            {
+                "name": "Rakefile",
+                "relativePath": "Rakefile",
+                "test": false
+            }
+        ],
+        "mainFile": "README.bit",
+        "rootDir": "rake/dockerhub",
+        "origin": "IMPORTED",
+        "originallySharedDir": "rake/dockerhub"
+    },
     "takelage.rake/rake/images@0.0.13": {
         "files": [
             {
