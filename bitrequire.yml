@@ -9,6 +9,7 @@ scopes:
   - name: packer/templates/takelage/docker
   takelage.rake:
   - name: rake/ansible
+  - name: rake/dockerhub
   - name: rake/images
   - name: rake/meta
   - name: rake/rubylint

@@ -15,5 +15,15 @@ images:
     omit_pipeline_name: prod
     target_user: takelage
     target_repo: takelruby
+  ruby_2_6:
+    base_user: takelage
+    base_repo: takelslim
+    base_tag: latest
+    layers:
+      - site
+    omit_pipeline_name: prod
+    target_user: takelage
+    target_repo: takelruby
+    target_tag: 2.6
 
 local_user: packer_local
