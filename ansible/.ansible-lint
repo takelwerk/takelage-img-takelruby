@@ -1,3 +1,5 @@
 ---
 skip_list:
+  - git-latest
+  - no-changed-when
   - role-name
