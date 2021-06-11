@@ -40,7 +40,7 @@ jobs:
         run: tau docker container command "rake rubylint"
 
       - name: Lint image with packer
-        run: tau docker container command "rake images:ruby_2_6:prod:lint"
+        run: tau docker container command "rake images:ruby_2_6:molecule:lint"
 
       - name: Build image with packer
         run: tau docker container command "rake images:ruby_2_6:prod:build"
@@ -56,5 +56,5 @@ jobs:
 
       - name: Tag and push image
         run: |
-          tau docker container command "rake dockerhub:ruby_2_6:prod:tag"
-          tau docker container command "rake dockerhub:ruby_2_6:prod:push"
+          tau docker container command "rake dockerhub:ruby_2_6:prod:tag:custom"
+          tau docker container command "rake dockerhub:ruby_2_6:prod:push:custom"
