@@ -8,7 +8,7 @@ lint: |
   flake8
 platforms:
   # yamllint disable-line rule:line-length
-  - name: molecule-image-${HOSTNAME:-name}-${TAKELAGE_PROJECT_IMG:-noimage}-${TAKELAGE_PROJECT_ENV:-prod}
+  - name: molecule-image-${TAKELAGE_UNQIUE:-nonunique}-${TAKELAGE_PROJECT_IMG:-noimage}-${TAKELAGE_PROJECT_ENV:-prod}
     # yamllint disable-line rule:line-length
     image: packer_local/${TAKELAGE_PROJECT_NAME:-name}-${TAKELAGE_PROJECT_IMG:-noimage}-${TAKELAGE_PROJECT_ENV:-prod}
     command: ${TAKELAGE_PROJECT_COMMAND:-/usr/bin/tail -f /dev/null}
