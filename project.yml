@@ -15,7 +15,7 @@ images:
     omit_pipeline_name: prod
     target_user: takelage
     target_repo: takelruby
-  ruby-2-6:
+  ruby26:
     base_user: takelage
     base_repo: takelslim
     base_tag: latest
