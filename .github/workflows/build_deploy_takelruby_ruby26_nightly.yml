@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # allow manual trigger
 
 jobs:
-  build-and-deploy-takelbase:
+  build-and-deploy-takelruby-ruby26:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository
