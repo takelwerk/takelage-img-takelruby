@@ -272,5 +272,23 @@
         "origin": "IMPORTED",
         "originallySharedDir": "rake/images"
     },
+    "takelage.rake/rake/meta@0.0.9": {
+        "files": [
+            {
+                "name": "README.bit",
+                "relativePath": "README.bit",
+                "test": false
+            },
+            {
+                "name": "Rakefile",
+                "relativePath": "Rakefile",
+                "test": false
+            }
+        ],
+        "mainFile": "README.bit",
+        "rootDir": "rake/meta",
+        "origin": "IMPORTED",
+        "originallySharedDir": "rake/meta"
+    },
     "version": "14.8.8"
 }
