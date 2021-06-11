@@ -29,7 +29,7 @@ def test_image_meta_cmd(testvars, image_meta_data):
         expected = testvars['project']['images'][image]['command']
     else:
         expected = '/usr/bin/tail -f /dev/null'
-    assert expected.split(' ') == image_meta_data['Config']['Cmd']
+    assert ['/bin/sh', '-c', expected] == image_meta_data['Config']['Cmd']
 
 
 def test_image_meta_work_dir(image_meta_data):
