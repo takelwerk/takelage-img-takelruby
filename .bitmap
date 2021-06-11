@@ -213,5 +213,28 @@
         "origin": "IMPORTED",
         "originallySharedDir": "ansible/roles/takel-rvm"
     },
+    "takelage.packer/packer/templates/takelage/docker@0.0.11": {
+        "files": [
+            {
+                "name": "README.bit",
+                "relativePath": "README.bit",
+                "test": false
+            },
+            {
+                "name": "main.pkr.hcl",
+                "relativePath": "main.pkr.hcl",
+                "test": false
+            },
+            {
+                "name": "vars.auto.pkr.hcl",
+                "relativePath": "vars.auto.pkr.hcl",
+                "test": false
+            }
+        ],
+        "mainFile": "README.bit",
+        "rootDir": "packer/templates/takelage/docker",
+        "origin": "IMPORTED",
+        "originallySharedDir": "packer/templates/takelage/docker"
+    },
     "version": "14.8.8"
 }
