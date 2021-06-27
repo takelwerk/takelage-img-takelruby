@@ -7,6 +7,7 @@ takel_rvm_deb_install_packages:
   - git
   - gnupg
   - procps
+  - shared-mime-info
   - sudo
 
 takel_rvm_completion_src_dir: /usr/local/src/completion-ruby
