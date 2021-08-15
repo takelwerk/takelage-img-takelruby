@@ -57,7 +57,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "ansible/molecule/image"
     },
-    "takelage.ansible/ansible/roles/takel-cleanup@0.0.14": {
+    "takelage.ansible/ansible/roles/takel-cleanup@0.0.16": {
         "files": [
             {
                 "name": "README.bit",
@@ -213,7 +213,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "ansible/roles/takel-rvm"
     },
-    "takelage.packer/packer/templates/takelage/docker@0.0.11": {
+    "takelage.packer/packer/templates/takelage/docker@0.0.12": {
         "files": [
             {
                 "name": "README.bit",
@@ -236,7 +236,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "packer/templates/takelage/docker"
     },
-    "takelage.rake/rake/ansible@0.0.3": {
+    "takelage.rake/rake/ansible@0.0.5": {
         "files": [
             {
                 "name": "README.bit",
@@ -254,7 +254,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "rake/ansible"
     },
-    "takelage.rake/rake/dockerhub@0.0.4": {
+    "takelage.rake/rake/dockerhub@0.0.9": {
         "files": [
             {
                 "name": "README.bit",
@@ -272,7 +272,7 @@
         "origin": "IMPORTED",
         "originallySharedDir": "rake/dockerhub"
     },
-    "takelage.rake/rake/images@0.0.14": {
+    "takelage.rake/rake/images@0.0.16": {
         "files": [
             {
                 "name": "README.bit",
