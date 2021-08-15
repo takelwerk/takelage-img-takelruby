@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+require 'rake'
+
+namespace :project do
+  desc 'Create and deploy takelslim image to dockerhub'
+  task prod: %w[dockerhub:login
+                rubylint
+                images:project:prod:molecule:lint
+                images:project:prod:build
+                images:project:prod:molecule:test
+                dockerhub:project:prod:tag
+                dockerhub:project:prod:push]
+end
