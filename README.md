@@ -5,9 +5,9 @@
 # takelage-img-takelruby
 
 The
-[takelage/takelruby](https://hub.docker.com/repository/docker/takelwerk/takelruby)
+[takelwerk/takelruby](https://hub.docker.com/repository/docker/takelwerk/takelruby)
 docker image is based on
-[takelage/takelslim](https://hub.docker.com/repository/docker/takelwerk/takelslim).
+[takelwerk/takelslim](https://hub.docker.com/repository/docker/takelwerk/takelslim).
 The latest 
 [ruby](https://www.ruby-lang.org) version has been installed via 
 [rvm](https://rvm.io).
