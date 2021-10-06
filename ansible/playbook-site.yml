@@ -3,5 +3,5 @@
   hosts: all
   gather_facts: false
   roles:
-    - takel-rvm
-    - takel-cleanup
+    - takel_rvm
+    - takel_cleanup
