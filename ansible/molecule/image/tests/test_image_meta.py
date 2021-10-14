@@ -1,5 +1,4 @@
 import os
-import pytest
 import takeltest
 
 testinfra_hosts = [takeltest.hosts()[0]]
