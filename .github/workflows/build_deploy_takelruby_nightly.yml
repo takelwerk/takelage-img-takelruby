@@ -1,4 +1,4 @@
-name: Build and deploy takelruby latest
+name: Build and deploy takelruby
 
 on:
   schedule: # run daily at midnight CET
