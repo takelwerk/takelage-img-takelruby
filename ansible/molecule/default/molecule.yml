@@ -33,6 +33,8 @@ verifier:
     s: true
     v: true
   additional_files_or_dirs: ${TAKELAGE_MOLECULE_VERIFIER_FILES:-[]}
+dependency:
+  enabled: false
 scenario:
   create_sequence:
     - create
