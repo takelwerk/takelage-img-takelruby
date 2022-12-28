@@ -1,4 +1,4 @@
-1---
+---
 takel_rvm_deb_install_packages:
   - apt-transport-https
   - bash-completion
