@@ -1,4 +1,4 @@
----
+1---
 takel_rvm_deb_install_packages:
   - apt-transport-https
   - bash-completion
@@ -19,7 +19,7 @@ takel_rvm_bash_completion: "{{ takel_rvm_completion_dir }}/ruby"
 # install one or more versions of ruby
 # the last ruby listed will be set as the default ruby
 takel_rvm_rubies:
-  - ruby-3.2
+  - ruby-3
 takel_rvm_default_ruby_version: "{{ takel_rvm_rubies | last }}"
 takel_rvm_ruby_install_flags:
 
