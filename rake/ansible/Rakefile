@@ -55,7 +55,6 @@ jobs_roles = \
 namespace :ansible do
   namespace :molecule do |env|
     subtasks(env.scope.path) do
-
       image = @project['images']['project']
       env_command = ''
       env_command = "TAKELAGE_PROJECT_COMMAND=#{image['command']} " if image.key?('command')
