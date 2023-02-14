@@ -85,8 +85,18 @@ jobs:
           # Log in to dockerhub
           tau docker container command "echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin"
           # Tag and push image
-          tau docker container command "rake dockerhub:project:tag:arm64"
-          tau docker container command "rake dockerhub:project:push:arm64"
+          tau docker container command "rake dockerhub:project:tag:latest:arm64"
+          tau docker container command "rake dockerhub:project:push:latest:arm64"
+          tau docker container command "rake dockerhub:project:tag:version:arm64"
+          tau docker container command "rake dockerhub:project:push:version:arm64"
+          # Pull amd64 images
+          tau docker container command "rake dockerhub:project:pull:latest:amd64"
+          tau docker container command "rake dockerhub:project:pull:version:amd64"
+          # Create and push docker manifests
+          tau docker container command "rake dockerhub:project:manifest:create:latest"
+          tau docker container command "rake dockerhub:project:manifest:push:latest"
+          tau docker container command "rake dockerhub:project:manifest:create:version"
+          tau docker container command "rake dockerhub:project:manifest:push:version"
           EOF
 
       - name: Setup qemu vm
