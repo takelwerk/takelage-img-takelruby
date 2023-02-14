@@ -1,16 +1,16 @@
-name: Build and deploy takelruby latest
+name: Build and deploy takelruby amd64
 
 on:
   schedule: # run daily at midnight CET
-    - cron:  '0 2 * * *'
+    - cron:  '0 3 * * *'
   workflow_dispatch: # allow manual trigger
 
 jobs:
-  build-and-deploy-takelruby-latest:
-    runs-on: ubuntu-20.04
+  build-and-deploy-takelruby-amd64:
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install mutagen
         run: |
@@ -18,9 +18,9 @@ jobs:
           sudo tar xvfz /tmp/mutagen.tar.gz -C /usr/local/bin
 
       - name: Set up ruby
-        uses: ruby/setup-ruby@v1.61.1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: ruby
 
       - name: Install tau
         run: gem install takeltau
@@ -50,12 +50,12 @@ jobs:
         run: tau docker container command "rake images:project:molecule:test"
 
       - name: Login to docker hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Tag and push image
         run: |
-          tau docker container command "rake dockerhub:project:tag"
-          tau docker container command "rake dockerhub:project:push"
+          tau docker container command "rake dockerhub:project:tag:amd64"
+          tau docker container command "rake dockerhub:project:push:amd64"
