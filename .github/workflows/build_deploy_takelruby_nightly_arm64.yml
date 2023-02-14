@@ -2,7 +2,7 @@
 name: Build and deploy takelruby arm64
 
 on:
-  schedule: # run daily at midnight CET
+  schedule: # run daily at two o'clock CET
     - cron:  '0 3 * * *'
   workflow_dispatch: # allow manual trigger
 
