@@ -4,11 +4,20 @@ require 'rake'
 
 namespace :project do
   desc 'Create and deploy takelruby image to dockerhub'
-  task prod: %w[dockerhub:login
-                rubylint
-                images:project:molecule:lint
-                images:project:build
-                images:project:molecule:test
-                dockerhub:project:tag
-                dockerhub:project:push]
+  task arm64: %w[dockerhub:login
+                 rubylint
+                 images:project:molecule:lint
+                 images:project:update
+                 images:project:build
+                 images:project:molecule:test
+                 dockerhub:project:tag:latest:arm64
+                 dockerhub:project:push:latest:arm64
+                 dockerhub:project:tag:version:arm64
+                 dockerhub:project:push:version:arm64
+                 dockerhub:project:pull:latest:amd64
+                 dockerhub:project:pull:version:amd64
+                 dockerhub:project:manifest:create:latest
+                 dockerhub:project:manifest:push:latest
+                 dockerhub:project:manifest:create:version
+                 dockerhub:project:manifest:push:version]
 end

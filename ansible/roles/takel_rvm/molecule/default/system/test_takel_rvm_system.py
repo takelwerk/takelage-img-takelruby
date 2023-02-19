@@ -19,4 +19,4 @@ def test_takel_rvm_system_ruby_available(host, testvars):
     with host.sudo(rvm_user):
         rvm_version_output = host.check_output(f"{ruby_binary_path} --version")
 
-    assert '[x86_64-linux]' in rvm_version_output
+    assert 'revision' in rvm_version_output
