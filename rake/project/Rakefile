@@ -3,7 +3,7 @@
 require 'rake'
 
 namespace :project do
-  desc 'Create and deploy takelruby image to dockerhub'
+  desc 'Create and deploy takelruby arm64 image to dockerhub'
   task arm64: %w[dockerhub:login
                  rubylint
                  images:project:molecule:lint
