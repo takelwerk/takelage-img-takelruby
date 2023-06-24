@@ -22,3 +22,8 @@ data/tasks/rvm.yml.i
 data/molecule/default/tests/test_takel_rvm_install.py.i
 data/molecule/userinstall/converge.yml.i
 data/tasks/update.yml.i
+data/molecule/default/tests/__pycache__/test_takel_rvm_completion.cpython-39-pytest-7.2.1.pyc.i
+data/molecule/default/tests/__pycache__/test_takel_rvm_rvm.cpython-39-pytest-7.2.1.pyc.i
+data/molecule/default/tests/__pycache__/test_takel_rvm_cleanup.cpython-39-pytest-7.2.1.pyc.i
+data/molecule/default/tests/__pycache__/test_takel_rvm_install.cpython-39-pytest-7.2.1.pyc.i
+data/molecule/default/system/__pycache__/test_takel_rvm_system.cpython-39-pytest-7.2.1.pyc.i
