@@ -1,11 +1,6 @@
 ---
 driver:
   name: docker
-lint: |
-  set -e
-  yamllint .
-  ansible-lint .
-  flake8
 platforms:
   - name: molecule_default_${HOSTNAME:-name}
     image: ${TAKELAGE_PROJECT_BASE_IMG:-nobaseimage}
@@ -44,7 +39,6 @@ scenario:
   destroy_sequence:
     - destroy
   test_sequence:
-    - lint
     - cleanup
     - destroy
     - syntax
@@ -52,4 +46,4 @@ scenario:
     - converge
     - idempotence
     - verify
-    # - destroy
+    - destroy
