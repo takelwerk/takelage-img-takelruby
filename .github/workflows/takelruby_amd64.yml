@@ -2,6 +2,7 @@
 name: takelruby amd64
 
 on:
+  push:
   schedule: # run daily at two o'clock CET
     - cron:  '0 3 * * *'
   workflow_dispatch: # allow manual trigger
